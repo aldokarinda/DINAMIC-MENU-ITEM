@@ -22,10 +22,26 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        components = New ComponentModel.Container()
+        ContextMenuStrip1 = New ContextMenuStrip(components)
+        SuspendLayout()
+        ' 
+        ' ContextMenuStrip1
+        ' 
+        ContextMenuStrip1.Name = "ContextMenuStrip1"
+        ContextMenuStrip1.Size = New Size(181, 26)
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        ContextMenuStrip = ContextMenuStrip1
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 
 End Class
